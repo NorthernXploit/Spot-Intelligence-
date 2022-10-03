@@ -14,7 +14,7 @@ btn = st.button('Enter')
 if btn:
     try:
         country = pycountry.countries.get(name=f'{user}').alpha_2 
-        r = requests.get(f'https://newsapi.org/v2/top-headlines?country={country}&category=sports&apiKey=APK)
+        r = requests.get(f'https://newsapi.org/v2/top-headlines?country={country}&category=sports&apiKey=8aa1052140334dd4b749fc4103046316)
         res = r.json()
         data = res['articles']
         for i in data:     
